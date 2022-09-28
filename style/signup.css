@@ -35,6 +35,7 @@ input{
  text-align: center;
  border: none;
  font-size:19px;
+ border-bottom:1px solid black;
 }
 a[href="Login.html"],a[ href="signup.html"]{
     color: black;
