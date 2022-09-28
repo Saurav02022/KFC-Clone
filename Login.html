@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login</title>
     <link
       rel="icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmyGxWpLmku5g-O0ExVJWPAAWNX1RjM-HMSg&usqp=CAU"
@@ -16,19 +16,9 @@
       <h3>Kentucky Fried Chicken</h3>
     </div>
     <div id="sk_form">
-      <h1>CREATE AN ACCOUNT</h1>
+      <h1>LOG IN TO KFC</h1>
       <table id="sk_table">
         <form id="sk_form">
-          <tr>
-            <td>
-              <input type="text" placeholder="First Name" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="text" placeholder="Last Name" />
-            </td>
-          </tr>
           <tr>
             <td>
               <input type="email" placeholder="Email" />
@@ -42,22 +32,19 @@
           <tr>
             <td>
               <p style="font-size: 17px">
-                By selecting the box, you agree to our
-                <a href="https://kfc.com/privacy-policy">Privacy Policy</a> and
-                <a href="https://kfc.com/terms-of-use">Terms of Use.</a>
+                By logging into the application or proceeding as a guest, you
+                agree to our Privacy Policy and Terms of Use.
               </p>
             </td>
           </tr>
           <tr>
             <td>
-              <button onclick="Create_Account()" id="sk_btn">
-                Create Account
-              </button>
+              <button onclick="Login()" id="sk_btn">Login</button>
             </td>
           </tr>
           <tr>
             <td>
-              <p>Already a member ? <a href="Login.html">Login</a></p>
+              <p>Don't have an account? <a href="signup.html">Join Now</a></p>
             </td>
           </tr>
         </form>
