@@ -19,7 +19,7 @@ body {
 input,
 #sk_btn {
   margin-top: 20px;
-  width: 300px;
+  width:400px;
 }
 #sk_btn{
     height: 40px;
@@ -44,5 +44,5 @@ a[href="Login.html"],a[ href="signup.html"]{
 
 a[href="https://kfc.com/terms-of-use"],a[href="https://kfc.com/privacy-policy"]{
     color: black;
-    font-size:16px;
+    font-size:17px;
 }
