@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #first{
+        width:100% ;
+        height: 50px;
+        background-color: black;
+        border: 1px solid red;
+        margin-top: 100px;
+    }
+    #first>p{
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+    #first>img{
+        width: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin: auto;
+    }
+    #second{
+        width: 80%;
+        height: auto;
+        border: 1px solid red;
+        margin: auto;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1;
+    }
+   #w{
+    color: black;
+   
+    font-size: 80px;
+   }
+   #image1{
+    width: 500px;
+    height: 800px;
+   }
+   #about{
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+    /* margin-top: 100px; */
+   }
+</style>
+<body>
+    <div id="first">
+        <p >Start your order for pickup or delivery</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAB/CAMAAADIBFx6AAAAk1BMVEXPJCj////y8vLz8/P09PTx8fHw8PD4+Pjr6+v7+/vm5ubj4+Pg4ODMAADPISX8///OEhjOGyDNAAjODBPloKDQMTTw6eny4OD2///mx8jp7+/x+Pjqu7vSOTvaeHnXa2zUSEvfkpPWXV7xzMzkzc7aiovfhITipqbpsrPz19jUUlPn3t7hvLzZl5j66enSQEHcsLAKpCsuAAAL0klEQVRogaVaC3ejLBBVEPERNMY8pU2bNk1f293v//+6jxlA0UCatKxnN4cVkGFm7swdojgp47zk8YzGRRZnRZwWcTKLueoqaVym0MuyOD/eLfdPj6soiu4/nvbLu2O8LdRbeTxL4pLFGY4lZcxneV4mcZGa6ViU0FQ9NFEPY/ikSWK6CPQmcrt7eRRiMW+aSi0QVVXTzFshHl+et5KbtxiBgZTBQDNWdZE0IZH+yqyMmV5/xs2HwyfN4rp7Pwkxx6knrZoLcdp1MZvBpmGglkPRywG7ojgpcl7wvKB5lsJmWZbbriTuXiMx98xu21xErzzOUEppFlMcyIskh64UukiU04zzTHXBCnma5WoFqt7KeN4lB9H6vn60k1YcMplnGYyFuQo9HTPTkWhmpUQmUuq6V9F+M71u7eK1m0ip1FLKQUqcwslSDg/jacr1SSfyuFpcNT+0xWon1UCcK9PTEZhOdZEItXV2pq35SXwnn5GsxAkGDtpaDto68+rScXWdgBxRrTYBKRHVqPqj/9V/be9Ec+MCUdSIO6mnGWak6u+plDLY7FLcPD80sZSFx6YLYqYlxgh4fPrZAmqJU6xtStlBb2ZRRvJUK27GEzANfrpeh86W2FOWgz7iXDgd2PRsLKUf70DvogZtQV0qtQKpPXC9KO4hqQ+/WUAtcajRpvQeEthDwZxzKOu33y2glnjrcDqlQIgAZCKl3c/PoF/ivR5LCRw5ggJY/Pr+FkP2t+Z+nRAG0JAgTkS94pIirh9utWRfa/eulHp8iAsad//99hB0E//J3LE4Ts2hE76OvpVRBe3bl6I1+tZU+9YeRUn3cllGTSua1f39/apZtJfdVnvqHBQ1GKeezSU9qtrm4+V588n4er35c/hoLoLfYpNajGNqBeNA5D4MyFV7f9hsO4BuQPOOxpvD/YU15vvO+icHHzbhY56vvpg9OEARZUB5XC6j8CeJDZ+gaMLlKfi+ePjcJgM+Gqzl8vMh+FHzk+xPGrVVKe5n6Jgr8abcPsW3IMApUuNmaBG/LkKSatcDPmi/1L0GzrlqnztwLxg3ZmCXKpSET1IDC/kcWgLCD2NxGBFyQj4CCrjYbU2QqEIHZmSKj4om2XYXEFTzyBIdxRjPl/8NvKnANwNgpyWqN+BjZvZP4Szru9DAv1ZKOjiTX/5jaNWJQZBYEBvCKQ8AcSPPM90lA3baftUWRXEF+uQVUrXimQ5DSR9z4groZkzXynsUzZMOYS0+pP4PEX8Yhj8zEAmiSAJu35GSsovAUbQjFM39bzUfdWJ8Cjoy9ZCsx0fCM+ySfiUROz3QaOvSuwexU9aCrqIYtFVtXrsZYkyD+j+vXdb6HDAiyx58n1H9AzDMtC5pi3NjLVAvlWWpLi8yNg9M6xKF2I8++t5pvyTGhxRjRHwR48T+l/5B5MEngeoxwXejEn2a1yeJYx8sz6aej0N6WJpg3e8057zUWRbu3y9J6TqhcS6GKVWsu+LOf4pr7b0BRfnRt0LzJEFbQGFsvKYCrKGL9l2p15rERlkLN/jw7ltBeWDj49VmyZmUlOBmqPHKWryeX7yXuUXR/I93hYMEq9WGi1irc8ChKzdd3cG7wq7GTBFS29q/wld/DsoOsj6PNV35cDTdl3eFuxrPAXSpe/at0C4HKZW9lDAHQc/f61LpN1ixKxAfgCngXqtUUkIygWCQqNw9U1BCp13QKwNS4vAW2nTtXaHZS8emB3xIHc+nmZNu79Wl44CiqRd/mieuUspSJ6/WLzGwHg3ZDE8J1SugrVpK4DUZ9VtcAkqvYgzq+FYVpGc67LBdLM39FqcCevCtiA+l3/+qDDn9Fh9Ul9dgo3mq8UF7b6+Ln391sVFRRFF0AkZrHe/NuqXvoJsPF0Vr71FV9zJPjJlNcBp6+y75z+u997mTixb+QEC8a8W5EGuAtXh9jvL9ndYlTaIEUPRpq2IeDk+fDuh0DLqoYV+2/ihCvHMdL2l8SP1oLt5z0FY0YNemc9emvQ5BjdVvGRQteSia2RqqRUsp90ipC0UzmeUqcd/SHwqoiGybYqZKgIIkFEPJJLXJK03p9hQYuZT4ls0fUr9KQ9YXX8QHGcoulc8w+YON7r2xAL7ZWRSdRvdqsc6vR2ANNomOjMbX3ngBl9jVbGBuAEW1HQCKBkPvqD3Ulqu0hFwo+FZLvNY+KSld6l7DgzalzUW5iRvTkJggy2K1A/vMeDyZhrMsFSzhW5nmKlFxu6CYlINavG1NSmPxIe3i1wtkYHuQ/Tlck4uqTGi+LGXcGSnVdbdetpfSb/GX9xk7IQxYRUak3+jstlvxsdytt9Cy5+XjZbq6eUpgWnjYwC/JUL7UD5sLIRbNQgS4fHcLd93AL/Ueh5bfEydXtipaO+xPZlWDXMjZb2zzF+nwfA4LF/IcNzcFvz0Ll0ZDoSCrvXnK7a154C7f6nCVdcDT39rEM9UsHFJvY64yRAzc1KrHcspVpsgsKgSQYT9zQxNvkjENO8hVDoUrta1PP17dtoXVelTTsygK5T210vL3jO5iWY+rAz3bgjHH+tebUFuwdSDLVTK3llUffruJxUHz3oPnm0R1n790HVX0Oa3HTWqK/uz7+tYeumlNcVLLin+3CfB5ZxU/otMBmyFsf6VOi+XWzGUdKkMU5b22KgfyG3WqVgkvp7WsHh9sPbAOsZbXbOG1sxW3weLOss2E/vupd6r+KTxOCNFzmUx1YtNIvd79dBOL/zpPxa+vXpM+f0p/6GJVXqUZA7ADp+LHBubCBGfdD+tN8x1H1kNX0Q3rcVbxQ12uH36C2POHvoo+rvixCYME6L1pbtfYqtmklr502CcyrviZ1JbF3xRsfE1F2zon1szNcA5ndVGsdPGbza66zwI1dpeAJOYXpfLt1sNevElnIjowmTYXLXRlgYNpgC4HiPBgaz4616ZgrknFD1lhR4b58baTaI9oU+5Z2koTpwOzzRxmWwZyzMACUPcx+qhzMatWZ/hg7jqALt8AFFXE4+CNEH0TJeG6hoEWD9xIUmxvcE8LFc27vAodGE2s+GnBUdengH+qrz7s5qke3ZspHJxmTl10kJKGjOzvtZtoPwudnlLDSYxuF5mK06hapZ9EXgmo7ZfEsZa2MdOZYPUcRdGmNQEgr8Ki5l/X3/JCntEwB5OKn/lfuBGCLCQullyVs4ijYS6Axs+Gr+wrfjb8oylPhotGOiIMlcJGMjpJrqumww0lkqJvRerLiw9Wl0lcfGsUaApTbRnhg897W++hXFWIexlk9J4UceIymmPvTdw8zvD/DguZ5SGCapBRTbJ88Dw9cxO8NzPclAOLh/1fvHlQRfHMAYMzKQ1cJbKQFkX7Ljyti3ISO4buTo/VKnLx3kwx1lb4pKK+oE/ti0T68kxbM8QHm4tOIzJHl7E60AWvulSrDCt+5cTizu9VJv1FSKbDQWP/BHvDdieONLGXKvUlSvdCZoqR6iV8wHuVyKgGUq/FQZpa1tm9ShcfYqqdkM8vEVND8fun5l9sSqVjKYFpxL57M70eDPVhW9lIvPyZ2OS2ikwmYZh6+kDPiw/O7VNTy/KQBeLN1rK+uX3KR/aYpmDbNkimAFXYVT9NI9n5kxxgH9zdqC7IvblofHa/ldoqSRGvJ5Fs1ShEtpXX4vx+azHcmxnCv9Ly/sVYSpoFnDBD4rmz1QGmK16ziU05XGV/FbK/D5n0nfon9MqRyi5epBlFgZGkdjilw2Tm9zf4MNSyyvxxUNnm0fGPyTf4MPWLPinpit/ncNjtMR/VRcNSMijKwLESHSdkbtEn49RUfNQj+9uE4k1aMkc7ZXgrs13Wt5pq0UUpUSslrNLkxV572XbfjSt+l6XkVtpsjbtPHgtkbvpbLewejqJZ4U1q56JL/xbtI1PUeHiLRjqqH9e4La9Ci/GNEIYh/+JYj9IBgw/jewrhLMsjJVvxy7X3UN5iWhedBVHUcpXWtydQsEoc35726GFu5W9P4rTtb9brgRR5zqTv0tf37d19OmZOJvhktLV0qvhkn0+r+EwP9Ggr4uT/k8fmjkNyDz0AAAAASUVORK5CYII=" alt="">
+
+    </div>
+    <div id="second">
+        <h1 id="w">IF YOU LIKE FRIED CHICKEN, THIS IS WHY</h1>
+        <img id="image1" src="https://images.ctfassets.net/9tka4b3550oc/2MBv3A7EZ95fODNjqOslhy/dc0288979cf0089a47d995152f4db2ee/hero-about.jpg?w=640" alt="">
+    </div>
+    <div id="about">
+        <h2>ABOUT KFC -------------------
+        </h2>
+        <p>We make fried chicken—heck, we practically invented it. If they ever make a food hall of fame, our chicken is gonna be a first-ballot inductee.</p>
+    </div>
+</body>
+</html>
