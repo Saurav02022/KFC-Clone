@@ -1,70 +1,74 @@
-#sa_banner_text{
-    width: 650px;
-    height: 213.688pxpx;
-    border: 1px solid rgb(19, 18, 18);
-    text-align: center;
-    position: absolute;
-    top: 80px;
-    left: 380px;
+body {
+  margin: 0%;
 }
-#sa_banner_text>h1{
-    font-size: 54px;
-    color: rgb(255, 251, 251);
-    line-height: 77.7px;
+#sa_banner_text {
+  margin-top:120px;
+  margin-left: 50px;
+  width: 650px;
+  height: 213.688pxpx;
+  border: 0px solid rgb(19, 18, 18);
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  left: 380px;
 }
-#sa_banner_text>p{
-    color: rgb(248, 246, 246);
-    width: 579px;
-    line-height: 28px;
-    font-weight: 200;
-    margin-left: 12px;
+#sa_banner > img {
+  width: 100%;
 }
-#sa_banner>img{
-    width: 1349px;
-    height: 360px;
+#sa_banner_text > h1 {
+  font-size: 54px;
+  color: rgb(255, 251, 251);
+  line-height: 77.7px;
+}
+#sa_banner_text > p {
+  color: rgb(248, 246, 246);
+  width: 579px;
+  line-height: 28px;
+  font-weight: 200;
+  margin-left: 12px;
+}
+#sa_banner > img {
+  /* width: 1349px; */
+  height: 360px;
 }
 /* carrer div */
-#sa_explore{
-    height: 58px;
-    width: 1349px;
-    border: 1px solid red;
-    display: flex;
-    background-color: #202124;
-    color: white;
-    font-size: 16px;
-    line-height: 28px;
-    align-items: center;
-   
+#sa_explore {
+    margin:-0.3%;
+  height: 58px;
+  /* width: 1349px; */
+  border: 0px solid red;
+  display: flex;
+  background-color: #202124;
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+  align-items: center;
 }
-#sa_span{
-    margin-left: 30px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    border: 1px solid blue;
-    height: 58px;
-    display: flex;
-    align-items: center;
+#sa_span {
+  margin-left:150px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  border: 0px solid blue;
+  height: 58px;
+  display: flex;
+  align-items: center;
 }
-#sa_carrer_div{
-    border: 1px solid green;
-    display: flex;
-    gap: 15px;
-    margin-left: 345px;
+#sa_carrer_div {
+  border: 0px solid green;
+  display: flex;
+  gap: 15px;
+  margin-left: 345px;
 }
-#sa_carrer_div>div{
-    border: 1px solid yellowgreen;
-    height: 58px;
-    width: auto;
-    display: flex;
-    align-items: center; 
-    color: #858c85;
+#sa_carrer_div > div {
+  border: 0px solid yellowgreen;
+  height: 58px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  color: #858c85;
 }
-#sa_carrer_div>div:hover{
-    color: white;
-    border: 1px solid cadetblue;
-
+#sa_carrer_div > div:hover {
+  color: white;
+  border: 0px solid cadetblue;
 }
-
-
-
