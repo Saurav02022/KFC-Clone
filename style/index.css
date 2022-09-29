@@ -1,3 +1,4 @@
+/* css for navbar */
 #ps_header{
     width: 100%;
     position: sticky;
@@ -6,7 +7,7 @@
     z-index: 50;
    }
 .ps_top{
-    width: 100%;
+    width: 90%;
     height: 28px;
     margin: auto;
     margin-left: 110px;
@@ -97,7 +98,7 @@
 
 }
 
-.ps_nav-bottom {
+.ps_nav-bottom{
     display: flex;
     background-color: #202124;
     color: white;
@@ -130,4 +131,157 @@
     box-sizing : border-box;
     font-weight : 400;
     color : rgb(255, 255, 255); 
+}
+
+/* css for footer */
+
+#ps_footer{
+    background-color: rgb(32, 33, 36);
+    padding-top: 50px;
+    text-align: justify;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+#ps_calorie{
+    box-sizing : border-box; 
+    margin : 0px 0px 5px; 
+    font-weight : 500; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    background-color : rgba(0, 0, 0, 0); 
+    margin-bottom : 5px; 
+    margin-left: 0px;
+}
+p{
+    box-sizing : border-box; 
+    font-weight : 400; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    background-color : rgba(0, 0, 0, 0); 
+    width: 70%; 
+    margin-left: 10%;
+
+}
+
+#ps_bottom_box1 {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 50px;
+    margin-left: 9%;
+    width: 90%;
+}
+
+.ps_list_1>ul{
+    list-style-type: none;
+}
+
+.ps_list_1>ul>li{
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.ps_list_1>ul>li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ps_list_1{
+    width: 20%;
+}
+
+.ps_list_1>ul>p {
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+#ps_bottom_box2{
+    box-sizing : border-box; 
+    font-weight : 400; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    /* vertical-align : baseline;  */
+    display : flex; 
+    flex-flow : row nowrap; 
+    align-items: center;
+    width: 90%;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+#ps_bottom_box2>#ps_policy{
+    box-sizing : border-box; 
+    margin-left : 0px; 
+    padding : 0px;
+    font-weight : 400; 
+    font-stretch : 100%; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    list-style : outside none none; 
+    display : flex; 
+    flex-wrap : wrap; 
+    width: 50%;
+    justify-content: space-between;
+    
+    
+}
+#ps_bottom_box2>#ps_policy>a{
+    box-sizing : border-box; 
+    font-weight : 400; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    vertical-align : baseline; 
+    color : rgb(255, 255, 255); 
+    text-decoration: none;
+}
+#ps_bottom_box2>#ps_policy>a:hover{
+    text-decoration : underline solid rgb(255, 255, 255); 
+    cursor: pointer;
+}
+#ps_copyright{
+    box-sizing : border-box; 
+    font-style : normal; 
+    font-variant : normal; 
+    font-weight : 400; 
+    font-stretch : 100%; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    vertical-align : baseline; 
+    margin-top : 0px; 
+    width: 22%;
+
+}
+/* .ps_list_2>div{
+width: 19%;
+margin-right: 5px;
+border-right: 1px solid gray;
+} */
+#ps_bottom_box2>#ps_social{
+    box-sizing : border-box; 
+    font-style : normal; 
+    font-variant : normal; 
+    font-weight : 400; 
+    font-stretch : 100%; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    vertical-align : baseline; 
+    list-style : outside none none; 
+    display : flex; 
+    width: 10%;
+
+}
+#ps_social>a{
+    box-sizing : border-box; 
+    width : 27px; 
+    height : 40px; 
+    display : block; 
+    color : rgb(255, 255, 255); 
+    border-radius: 50%;
+    align-items: center;
 }
