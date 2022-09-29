@@ -6,7 +6,7 @@ function header(){
         <div class="ps_box1">
             <a href="index.html"><img class="ps_img_logo" src="https://i.ibb.co/kGXHQ82/nav1.png" alt="KFC Logo"></a>
             <a href="menu_page.html">Menu</a>
-            <a href="carrer.html">Careers</a>
+            <a href="career.html">Careers</a>
             <a href="about.html">About</a>
             <a href="">Find a KFC®</a>
         </div>
