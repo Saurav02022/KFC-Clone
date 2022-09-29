@@ -13,7 +13,7 @@ function header(){
         <div class="ps_box2">
             <a href="" id="ps_btn_property"><button id="ps_btn-class">Start Order</button></a>
             <a href="" id="ps_account_id"><i class="fas fa-user-circle fa-2x icon-border fas_size"></i></a>
-            <a href="" id="cart_id"> <i class="fas fa-shopping-bag fa-2x "></i></a>              
+            <a href="" id="ps_cart_id"> <i class="fas fa-shopping-bag fa-2x "></i></a>              
         </div>
     </div>
     <div class="ps_nav-bottom">
