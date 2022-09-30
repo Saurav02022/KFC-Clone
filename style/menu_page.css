@@ -7,7 +7,7 @@
  
  #pc_sidebar{
             width: 250.766px;
-            margin: 20px 0 0 0;
+            margin: 150px 0 0 0;
             display: block;
             background-color: #FFFFFF;
             line-height: 28px;
@@ -87,6 +87,11 @@ background-color: rgb(248, 247, 247) ;
 margin-top: 75px;
 
 
+ }
+
+ #pc_img:hover{
+  width: 550px;
+  height: 550px;
  }
  /* #pc_div{
     display: grid;
