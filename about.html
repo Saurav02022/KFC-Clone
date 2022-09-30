@@ -142,7 +142,7 @@
    #ss_fourth_mid{
     display: grid;
     width: 100%;
-    height: 400px;
+    height: auto;
     border: 1px solid greenyellow;
     grid-template-columns: 50% 50%;
     background-color: wh;
@@ -161,11 +161,49 @@
     
    }
    #image5{
+    margin-top: 50px;
     
    }
    #ss_p11{
     font-size: 18px;
    }
+
+   #ss_low{
+    width: 70%;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 20px;
+   }
+   #image55{
+    width: 100%;
+    height: 320px;
+  
+   }
+   #image66{
+    width: 104%;
+    height: 320px;
+   }
+   #ss_h1111{
+    text-align: center;
+    color: black;
+    text-transform: none
+   }
+   #ss_h22222{
+    text-align: center;
+    color: black;
+    text-transform: none
+
+   }
+
+
+ 
+
+
+  
 </style>
 <body>
     <!-- <div id="first">
@@ -173,7 +211,7 @@
         <img src="data:image/png;base64,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" alt="">
 
     </div> -->
-    <div id="ps_header"></div>
+    <!-- <div id="ps_header"></div> -->
     <div id="ss_second">
         <h1 id="ss_w">IF YOU LIKE FRIED CHICKEN, THIS IS WHY</h1>
         <img id="ss_image1" src="https://images.ctfassets.net/9tka4b3550oc/2MBv3A7EZ95fODNjqOslhy/dc0288979cf0089a47d995152f4db2ee/hero-about.jpg?w=640" alt="">
@@ -195,11 +233,11 @@
             <a href="https://www.kfc.com/about/how-we-make-chicken"><button id="ss_button">Learn More</button></a>
             
         </div>  
-        </div>
+     </div>
 
         <div id="ss_second_mid">
             <img id="image2" src="https://images.ctfassets.net/9tka4b3550oc/2Qk8bdug8e1FNxFt4nMuGv/bf7736702d142e7fd42076f889fd206b/about-story-narrow.png?w=640" alt="">
-            <div>
+            <div id="ss_dd1">
                 <h1 id="ss_h1">THE MAN, THE MYTH, THE LEGEND</h1>
                 <h3 id="ss_h3">IN THE BEGINNING
                 </h3>
@@ -212,6 +250,8 @@
            <img id="image3" src="https://images.ctfassets.net/9tka4b3550oc/1IxE5CuLFOBjNz6Q4BDVkl/dd3e7b3417b874b76777c3ef40edb6f6/3_2_Framed_Colonel.jpg?w=1280" alt="">
         </div>
 
+
+        
         <div id="ss_fourth_mid">
             <img id="image5" src="https://images.ctfassets.net/9tka4b3550oc/21tnFdAR80lItITKsz6dLL/bae7535166bab0052b6509aed16b0245/about-card.jpg?q=75&w=1680" alt="">
             <div id="ss_div1">
@@ -219,8 +259,12 @@
                 <p id="ss_p11">KFC Corporation, based in Louisville, Kentucky, is one of the few brands in America that can boast a rich, decades-long history of success and innovation. We’re at over 24,000 KFC outlets and more than 145 countries and territories around the world. And you know what? There’s still a cook in a kitchen in every last one of them, freshly preparing delicious, complete family meals at affordable prices.</p>
             </div>
         </div>
-       
-       
+
+     <div id="ss_low" >
+        <div><a href="https://www.kfc.com/about/how-we-make-chicken"><h1 id="ss_h1111">HOW WE MAKE CHICKEN</h1><img id="image55" src="https://images.ctfassets.net/9tka4b3550oc/1cWWNolw5DmheOjwf8dBVV/0f6774f238331949b583e0b7d61c6567/about-steps-2.jpg?w=960" alt=""></a></div>
+        <div><a href="https://www.kfc.com/about/company-responsibility"><h1 id="ss_h22222">COMPANY RESPOHSIBILITY</h1><img id="image66" src="https://images.ctfassets.net/9tka4b3550oc/6ULUn7X5s6OUK8ajHQ5cyZ/32c52d58b460a407cc6cec95950842e0/about-steps-0.jpg?w=960" alt=""></a></div>
+     </div>
+     
 
 </body>
 </html>
