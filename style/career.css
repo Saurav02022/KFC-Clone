@@ -72,3 +72,39 @@ body {
   color: white;
   border: 0px solid cadetblue;
 }
+#sa_map{
+  border: 1px solid red;
+  height: auto;
+}
+#sa_map>img{
+width: 100%;
+}
+#sa_map_input{
+width: 467.95px;
+height: 439.06px;
+background-color: #F8F7F5;
+position: absolute;
+top: 640px;
+left: 170px;
+}
+#sa_map_select,#sa_location{
+  width: 387.95px;
+  height: 36px;
+  border-radius: 15px;
+  margin: 15px 15px 20px 25px;
+}
+#sa_button{
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  text-align: center;
+  background-color:black;
+  margin-left: 25px;
+  color: white;
+}
+#sa_map_input>h1{
+  margin: 25px;
+}
+#sa_button:hover{
+  cursor: pointer;
+}
