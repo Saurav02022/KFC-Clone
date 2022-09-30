@@ -1,10 +1,13 @@
-let data_ls_2=JSON.parse(localStorage.getItem("pc_prod_2"))||[]
+
+
+
+let data_ls=JSON.parse(localStorage.getItem("pc_prod"))||[]
+let data_ls_2=JSON.parse(localStorage.getItem("pc_prod"))||[]
 
 let data_ls_3=JSON.parse(localStorage.getItem("pc_prod"))||[]
 
 let data_ls_bucket=JSON.parse(localStorage.getItem("pc_prod"))||[]
-
-let data_ls_bucket_2=JSON.parse(localStorage.getItem("pc_prod_bucket_2"))||[]
+let data_ls_bucket_2=JSON.parse(localStorage.getItem("pc_prod"))||[]
 
 let data_ls_bucket_3=JSON.parse(localStorage.getItem("pc_prod"))||[]
 
@@ -40,12 +43,13 @@ let display=(data,display_data)=>{
     btn.addEventListener("click",function(){
         data_ls.push(el)
         localStorage.setItem("pc_prod",JSON.stringify(data_ls))
+        
     })
     
       div.append(h1,img,p_title,p_cal,p_price,btn)
     display_data.append(div)
     });
-    
+   
 }
 
 //for secnd and third product
@@ -59,31 +63,32 @@ let display_two=(data_two,display)=>{
      
       let image=document.createElement("img");
       image.src=el.img;
-      console.log(image)
+    
       image.id="pcimg"
       let title=document.createElement("p")
       title.innerText=el.title;
-      console.log(title)
+    
       let cal=document.createElement("p")
       cal.innerText=`Calories:${el.cal}`
-      console.log(cal)
+    
       let price=document.createElement("p")
       price.innerText=`Price:${ el.price}`;
-      console.log(price)
+      
     let btn_2=document.createElement("button")
     btn_2.innerText="ADD"
     btn_2.id="pc_btn_2"
     btn_2.addEventListener("click",function(){
         data_ls_2.push(el)
-        localStorage.setItem("pc_prod_2",JSON.stringify(data_ls_2))
+        localStorage.setItem("pc_prod",JSON.stringify(data_ls_2))
+       
     })
-    console.log(btn_2)
-    div_two.append(image,title,cal,price,btn_2)
-    console.log(div_two)
-     display.append(div_two)
-     console.log(display)
-    });
     
+    div_two.append(image,title,cal,price,btn_2)
+    
+     display.append(div_two)
+     
+    });
+   
 }
 
 let features=[{
@@ -201,7 +206,7 @@ display_two(bucket_3,pc_product_div_bucket_3)
 
 
 
-let data_ls=JSON.parse(localStorage.getItem("pc_prod"))||[]
+
 
 
 
