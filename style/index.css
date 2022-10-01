@@ -133,6 +133,134 @@
     color : rgb(255, 255, 255); 
 }
 
+/* css for popup window */
+#ps_popup{
+    width: 70%;
+    height: 600px;
+    background-color: rgb(221, 218, 218);
+    margin: auto;
+    margin-bottom: 20px;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    overflow:scroll; /* Enable scroll if needed */
+    border: 1px solid black;
+    border-radius: 10px;
+    left: 15%;
+    
+}
+#ps_popup>#ps_topbar{
+    width: 100%;
+    height: 6%;
+    background-color:white;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+    /* display: flex; */
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#ps_popup>h2{
+    box-sizing : border-box; 
+    font-weight : 700; 
+    line-height : 43.7px; 
+    font-family : "National 2 Condensed"; 
+    font-size : 38px; 
+    text-transform : uppercase; 
+    letter-spacing : 1px; 
+    width: 65%; 
+    margin-bottom : 30px; 
+    text-align : center; 
+    margin: auto;
+}
+#ps_popup>p{
+    box-sizing : border-box; 
+    font-weight : 400; 
+    line-height : 28px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 16px; 
+    max-width : 480px; 
+    text-align : center; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#ps_order{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+#ps_pickup{
+    width: 40%;
+    height: auto;
+    /* border: 1px solid blue; */
+    align-items: center;
+    text-align: center; 
+}
+#ps_pickup>button{
+    height : 70px; 
+    border-radius : 33px; 
+    font-size : 24px; 
+    line-height : 24px; 
+    font-weight : 700; 
+    text-align : center; 
+    color : rgb(32, 33, 36); 
+    box-sizing : border-box;
+    font-family : "National 2 Condensed"; 
+    background : rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box; 
+    cursor : pointer;
+    text-transform : uppercase; 
+    width : 240px; margin: auto;
+    margin-top: 10%;
+}
+
+#ps_or{
+    /* border: 1px solid red; */
+    width: 2%;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+}
+#ps_delivery{
+    width: 40%;
+    height: auto;
+    /* border: 1px solid blue; */
+    align-items: center;
+    text-align: center; 
+}
+#ps_delivery>button{
+    height : 70px; 
+    border-radius : 33px; 
+    font-size : 24px; 
+    line-height : 24px; 
+    font-weight : 700; 
+    text-align : center; 
+    color : rgb(32, 33, 36); 
+    box-sizing : border-box;
+    font-family : "National 2 Condensed"; 
+    background : rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box; 
+    cursor : pointer;
+    text-transform : uppercase; 
+    width : 240px; margin: auto;
+    margin-top: 10%;
+}
+
+
 /* css for footer */
 
 #ps_footer{
@@ -152,9 +280,9 @@
     font-size : 12px; 
     background-color : rgba(0, 0, 0, 0); 
     margin-bottom : 5px; 
-    margin-left: 0px;
+    margin-left: 10%;
 }
-p{
+#ps_calorie~p{
     box-sizing : border-box; 
     font-weight : 400; 
     line-height : 21px; 
@@ -163,7 +291,6 @@ p{
     background-color : rgba(0, 0, 0, 0); 
     width: 70%; 
     margin-left: 10%;
-
 }
 
 #ps_bottom_box1 {
@@ -284,4 +411,146 @@ border-right: 1px solid gray;
     color : rgb(255, 255, 255); 
     border-radius: 50%;
     align-items: center;
+}
+
+
+/* for carousel */
+
+#ps_famil{
+    text-align: left;
+    align-items: center;
+}
+/*  css for black box */
+#ps_black_bar{
+    box-sizing : border-box; 
+    padding : 20px 122.94px; 
+    font-weight : 400; 
+    font-stretch : 100%; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    vertical-align : baseline; 
+    background-color : rgb(32, 33, 36); 
+    color : rgb(248, 247, 245); 
+    position : relative; 
+}
+#ps_black_bar>p{
+    box-sizing : border-box; 
+    font-weight : 400; 
+    line-height : 21px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 12px; 
+    vertical-align : baseline;
+}
+
+/*  css for featured items. */
+#ps_featured{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    margin: auto;
+    gap: 3%;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/*  for red section  */
+
+#ps_red_section{
+    padding-left: 10%;
+    font-weight : 400; 
+    line-height : 28px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 16px; 
+    vertical-align : baseline; 
+    justify-content : space-between;
+    align-items : center; 
+    background-color : rgb(228, 0, 43); 
+    color : rgb(255, 255, 255); 
+    text-align : left; 
+    display : flex; 
+    justify-content: space-evenly;
+    height: 80px;
+}
+#ps_red_section>h2{
+    font-weight : 700; 
+    font-stretch : 100%; 
+    line-height : 24px; 
+    font-family : "National 2 Condensed"; 
+    font-size : 20px; 
+    vertical-align : baseline; 
+    letter-spacing : 1px; 
+    text-transform : uppercase; 
+}
+#ps_red_section>button{
+    height : 44px;  
+    width: 15%;
+    border-radius : 22px; 
+    border: none;
+    font-size : 14px; 
+    line-height : 44px; 
+    font-weight : 700; 
+    text-align : center; 
+    background-color : rgb(255, 255, 255); 
+    color : rgb(32, 33, 36); 
+    font-family : "Helvetica Neue", sans-serif; 
+}
+#ps_lastred{
+    width: 100%;
+    /* height: 600px; */
+    /* border: 1px solid blue; */
+    background-color : rgb(228, 0, 43);  
+    font-weight : 400;  
+    line-height : 28px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 16px; 
+    text-align : center; 
+    color : rgb(255, 255, 255);
+}
+#ps_middle{
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    /* border : 1px solid rgb(255, 255, 255);    */
+    line-height : 28px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 16px; 
+}
+#ps_middle>#ps_ourfood{
+    margin: auto;
+    margin-top: 5%;
+    line-height : 24px; 
+    font-family : "National 2 Condensed";
+    text-transform : uppercase;     
+    font-size : 16px; 
+    margin-bottom: 5%;
+}
+#ps_middle>h2{
+    /* font-family : "National 2 Condensed";  */
+    font-size : 80px; 
+    vertical-align : baseline; 
+    letter-spacing : 2px; 
+    text-transform : uppercase; 
+    width : 85%;
+    margin: auto;
+    font-weight: bolder; 
+}
+#ps_middle>p{
+    font-weight : 400; 
+    font-stretch : 100%; 
+    font-family : "Helvetica Neue", sans-serif; 
+    font-size : 16px;  
+    margin-top : 20px; 
+}
+#ps_learn{
+    height : 44px; 
+    padding : 0px 40px; 
+    border-radius : 22px; 
+    font-size : 14px; 
+    text-align : center; 
+    background-color : rgb(0, 0, 0); 
+    color : rgb(255, 255, 255); 
+    margin : 40px 0px 0px; 
+    font-family : "Helvetica Neue", sans-serif; 
+    margin-top : 40px;
 }
