@@ -73,7 +73,7 @@
     height : 44px; 
     position : relative; 
 }
-.ps_box2>#account_id{   
+.ps_box2>#ps_account_id{   
     margin: 5px 0px;
     width: 55px;
     cursor: pointer;
