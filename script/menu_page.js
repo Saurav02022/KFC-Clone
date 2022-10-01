@@ -1,4 +1,31 @@
+import header from '../components/navbar.js'
 
+let header_div=document.getElementById("ps_header");
+header_div.innerHTML=header();
+
+import {footer} from '../components/footer.js';
+
+let footer_div=document.getElementById("ps_footer");
+footer_div.innerHTML=footer();
+
+// Import navbar popup
+
+import {popup_display} from "../components/navbar.js";
+let popup=document.getElementById("ps_popup");
+popup.innerHTML=popup_display();
+
+
+let pickup=document.getElementsByClassName("ps_nav-bottom")[0];
+// console.log(pickup);
+pickup.addEventListener("click",function(){
+    
+    popup.style.display="block";
+})
+
+let span = document.getElementsByClassName("close")[0]
+span.addEventListener("click",function(){
+    popup.style.display="none";
+})
 
 
 let data_ls=JSON.parse(localStorage.getItem("pc_prod"))||[]
