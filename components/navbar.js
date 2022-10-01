@@ -26,3 +26,23 @@ function header(){
 
 
 export default header;
+
+const popup_display=()=>{
+    return `<div id="ps_topbar">START YOUR ORDER
+    <span class="close">&times;</span>
+</div>
+<h2>LET'S GET STARTED. WOULD YOU LIKE PICKUP OR DELIVERY?</h2>
+<p>Menu availability and pricing may vary between order types.</p>
+<div id="ps_order">
+    <div id="ps_pickup">
+        <img src="https://i.ibb.co/xzwZ8RP/bag.jpg" alt=""><br>
+        <button>QUICK PICK-UP</button>
+    </div>
+    <div id="ps_or">or</div>
+    <div id="ps_delivery">
+        <img src="https://i.ibb.co/QkhkQ72/delivery-vehicle.jpg " alt=""><br>
+        <button>DELIVERY</button>
+    </div>
+</div>`
+}
+export {popup_display};
