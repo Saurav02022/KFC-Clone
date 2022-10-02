@@ -12,8 +12,8 @@ footer_div.innerHTML=footer();
 
 import {popup_display} from "../components/navbar.js";
 let popup=document.getElementById("ps_popup");
-popup.innerHTML=popup_display();
 
+popup.innerHTML=popup_display();
 
 let pickup=document.getElementsByClassName("ps_nav-bottom")[0];
 // console.log(pickup);
@@ -27,8 +27,9 @@ span.addEventListener("click",function(){
     popup.style.display="none";
 })
 
-// let display = document.getElementById("ps_footer")
-// display.innerHTML = footer()
+
+//for button
+
 
 const append_data=async()=>{
   let data_ls_cart=JSON.parse(localStorage.getItem("pc_prod"))||[]
@@ -75,22 +76,26 @@ function remove(index){
         localStorage.setItem("pc_prod",JSON.stringify(newData));
         append_data();
       }
-// let count=0;
+let plus=document.getElementById("pc_plus")
+plus.addEventListener("click",function(){
+  count_plus();
+})
 
-// function count(){
-//       document.getElementById("pc_plus")
-//       count++
-//       document.getElementById("pc_quantity").innerText=count;
-// }
-//       // // console.log("fun check")
-//       //      }
-//       //      function mydel(event){
-//       //       event.target.parentNode.remove()
-//       //       count--
-           
-//       //       document.querySelector("#total-employee").innerText=count
-           
-//       //      }
+let minus=document.getElementById("pc_minus")
+minus.addEventListener("click",function(){
+  count_minus();
+})
+let count=0
 
-
+let span_tag=document.getElementById("pc_quantity_display")
+function count_plus(){
+  count++;
+  span_tag.innerText=count;
+}
+function count_minus(){
+  if(count>0){
+    count--
+    span_tag.innerText=count;
+  }
+}
     
