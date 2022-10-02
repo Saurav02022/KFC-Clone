@@ -15,6 +15,11 @@ let popup=document.getElementById("ps_popup");
 popup.innerHTML=popup_display();
 
 
+import {del_popup} from "../components/navbar.js";
+let del_address=document.getElementById("ps_delivr");
+del_address.innerHTML=del_popup();
+
+
 let pickup=document.getElementsByClassName("ps_nav-bottom")[0];
 // console.log(pickup);
 pickup.addEventListener("click",function(){
@@ -23,11 +28,25 @@ pickup.addEventListener("click",function(){
 })
 
 let span = document.getElementsByClassName("close")[0]
+console.log(span);
 span.addEventListener("click",function(){
     popup.style.display="none";
+    del_address.style.display="none";
 })
 
+// for delivery popup
+let span1 = document.getElementsByClassName("close")[1]
+span1.addEventListener("click",function(){
+    popup.style.display="none";
+    del_address.style.display="none";
+})
 
+let delivery_popup=document.querySelector("#ps_delivery > button");
+
+delivery_popup.addEventListener("click",function(){
+    del_address.style.display="block";
+    popup.style.display="none";
+})
 //  for featured items 
 let featured_data=[
     {
@@ -77,3 +96,8 @@ const append=(data)=>{
     });
 }
 append(featured_data);
+
+let pickup_button=document.getElementById("ps_quick");
+pickup_button.addEventListener("click",function(){
+    alert("Enter Area code/Pin code for Pickup")
+})

@@ -36,7 +36,7 @@ const popup_display=()=>{
 <div id="ps_order">
     <div id="ps_pickup">
         <img src="https://i.ibb.co/xzwZ8RP/bag.jpg" alt=""><br>
-        <button>QUICK PICK-UP</button>
+        <button id="ps_quick">QUICK PICK-UP</button>
     </div>
     <div id="ps_or">or</div>
     <div id="ps_delivery">
@@ -46,3 +46,14 @@ const popup_display=()=>{
 </div>`
 }
 export {popup_display};
+
+const del_popup=()=>{
+    return `<div id="ps_del_top">DELIVERY ADDRESS
+    <span class="close">&times;</span>
+  </div>
+  <div id="ps_addrss">
+    <p>Already a Member? <a href="./Login.html">Sign In</a></p>
+    <input type="text" placeholder="Enter Delivery Address">
+  </div>`
+}
+export {del_popup};
