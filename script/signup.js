@@ -11,10 +11,11 @@ let flag;
 
 let getData = JSON.parse(localStorage.getItem("SignUp_Data")) || [];
 
-let Data = JSON.parse(localStorage.getItem("SignUp_Data")) 
+let Data = JSON.parse(localStorage.getItem("SignUp_Data"));
 
 let Create_Account = () => {
-  event.preventDefault()
+  event.preventDefault();
+
   let first_name = document.getElementById("First_Name").value;
 
   let last_name = document.getElementById("Last_Name").value;
@@ -29,41 +30,24 @@ let Create_Account = () => {
     email,
     password,
   };
-
-  Data.map((el) => {
-    if (el.email == email) {
-      flag = true;
-    } else {
-      flag = false;
-    }
-  });
-
-  if (flag == true) {
-    alert("Your are already user Please Login");
-<<<<<<< HEAD
-    window.location.href = "Login.html";
-=======
-    window.location.href="Login.html"
->>>>>>> 261293fe830c4db9660f206118adab806aea0e04
-  } else {
-    if (first_name !== "") {
-      if (last_name !== "") {
-        if (email !== "") {
-          if (password.length >= 8) {
-            getData.push(User);
-            localStorage.setItem("SignUp_Data", JSON.stringify(getData));
-            window.location.href = "login.html"
-          } else {
-            alert("Password length should be 8 or more than");
-          }
+  
+  if (first_name !== "") {
+    if (last_name !== "") {
+      if (email !== "") {
+        if (password.length >= 8) {
+          getData.push(User);
+          localStorage.setItem("SignUp_Data", JSON.stringify(getData));
+          window.location.href = "./Login.html";
         } else {
-          alert("Please fill Email address");
+          alert("Password should be more 8 characters");
         }
       } else {
-        alert("Please fill the Last Name");
+        alert("Please fill the Email Address");
       }
     } else {
       alert("Please fill the First Name");
     }
+  } else {
+    alert("Please fill the First Name");
   }
 };

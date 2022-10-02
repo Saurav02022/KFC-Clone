@@ -7,6 +7,7 @@ let getData = JSON.parse(localStorage.getItem("SignUp_Data"));
 let flag;
 
 let Login = () => {
+  event.preventDefault()
   let email = document.getElementById("email").value;
 
   let password = document.getElementById("password").value;
@@ -22,7 +23,7 @@ let Login = () => {
   });
 
   if (flag == true) {
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
   } else {
     alert("Please fill correct Details");
   }
