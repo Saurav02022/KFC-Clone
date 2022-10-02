@@ -31,7 +31,7 @@ let Create_Account = () => {
   });
   if (flag == true) {
     alert("Your are already user Please Login");
-    window.location.href='Login.html'
+    window.location.href="Login.html"
   } else {
     if (first_name !== "") {
       if (last_name !== "") {

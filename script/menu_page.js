@@ -193,7 +193,7 @@ let bucket_2=[{
 },
 {
     img:"https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketMealDark?q=75",
-    title:"12pc Meal (Drum & Thigh",
+    title:"12pc Meal (Drum & Thigh)",
     cal:"3550-6800",
     price:"3500" 
 },
@@ -206,7 +206,7 @@ display_two(bucket_2,pc_product_div_bucket_2)
 
 let bucket_3=[{
     img:"https://digitaleat.kfc.com/menus/image/bare/kfc-16pcBucketMealStandard?q=75",
-   title:"16pc Meal (Variety",
+   title:"16pc Meal (Variety)",
     cal:550-1400,
     price:1000,
 
