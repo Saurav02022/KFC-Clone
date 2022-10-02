@@ -8,15 +8,108 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style/index.css">
+   
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
     <!-- For header section -->
     <div id="ps_header"></div>
 
+    <!--  for location popup -->
+    <div id="ps_popup"></div>
+    
+    <div class="ps_container"> 
+        <div id="ps_myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#ps_myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#ps_myCarousel" data-slide-to="1"></li>
+            <li data-target="#ps_myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://i.ibb.co/bB1yG62/Slide-image-1.jpg" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="https://i.ibb.co/HpLvfFp/Slide-image-2.jpg" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              
+              <video width="100%" height="100%" autoplay="true" loop="1" muted="1" >
+                <source src="https://ik.imagekit.io/kxhwj3fgh/THE_NEW_KFC_APP_IS_HERE_2_ARAgJXm8c.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1664629846893" type="video/mp4">
+                </video> 
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#ps_myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#ps_myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+     </div>
+
+      <!--  for black bar -->
+      <div id="ps_black_bar">
+        <p>Prices and participation may vary. Meal includes 12 tenders, 3 lg sides, 6 biscuits, and 6 sauces. Tax and substitutions extra.</p>
+      </div>
+
+      <!--  for featured items -->
+      <h2 class="ps_feature_items">FEATURED ITEMS</h2>
+      <div id="ps_featured">
+        <!-- appended featured items here. -->
+        
+        
+      </div>
+
+
+      <!--  for red section -->
+
+      <div id="ps_red_section">
+        <h2>FINGER LICKIN' GOOD® IS NOW JUST A FEW CLICKS AWAY</h2>
+        <button><a href="./menu_page.html">Start Order</a></button>
+      </div>
+      <!--  for  last red section-->
+      <div id="ps_lastred">
+        <div id="ps_middle">
+          <img src="https://i.ibb.co/NmjnrMC/white-bars.png" alt="">
+          <div id="ps_ourfood">Our food</div>
+          <h2>WE MAKE IT THE HARD WAY</h2>
+          <p>See what goes into making our world famous fried chicken.</p>
+          <button id="ps_learn"><a href="https://www.kfc.com/about/how-we-make-chicken">Learn More</a></button>
+        </div>
+        <img src="https://i.ibb.co/55vT3vy/big-chickenbox.png" alt="">
+        
+      </div>
+    
+    <!-- for : Colonel Sanders  -->
+    <div id="ps_founder">
+      <div id="ps_unlock">
+        <h2>UNLOCK MORE FINGER LICKIN' GOOD BENEFITS</h2>
+        <p>Create an account to get access to exclusive deals and faster checkout.</p>
+        <button><a href="./signup.html">Sign me up!</a></button>
+      </div>
+      <div id="ps_founder_photo">
+        <img src="https://i.ibb.co/z2pfwPt/oldman.png" alt="">
+      </div>
+    </div>
+
+
     <!-- For footer section -->
-
     <div id="ps_footer"></div>
-
     
 </body>
 </html>
