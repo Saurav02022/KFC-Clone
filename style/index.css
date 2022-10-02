@@ -43,9 +43,7 @@
 .ps_box1>a{
     box-sizing : border-box; 
     margin : 0px 0px 0px 40px; 
-    font-style : normal; 
     font-weight : 700; 
-    font-stretch : 100%; 
     line-height : 24.5px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 14px; 
@@ -67,8 +65,7 @@
     font-size: 15px;
     font-family : "Helvetica Neue", sans-serif;
     font-weight: 700;
-    cursor: pointer;
-    font-stretch : 100%; 
+    cursor: pointer; 
     text-align : center; 
     height : 44px; 
     position : relative; 
@@ -173,7 +170,6 @@
   cursor: pointer;
 }
 #ps_popup>h2{
-    box-sizing : border-box; 
     font-weight : 700; 
     line-height : 43.7px; 
     font-family : "National 2 Condensed"; 
@@ -330,7 +326,6 @@
     line-height : 21px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 12px; 
-    /* vertical-align : baseline;  */
     display : flex; 
     flex-flow : row nowrap; 
     align-items: center;
@@ -339,11 +334,9 @@
     margin-left: 5%;
 }
 #ps_bottom_box2>#ps_policy{
-    box-sizing : border-box; 
     margin-left : 0px; 
     padding : 0px;
-    font-weight : 400; 
-    font-stretch : 100%; 
+    font-weight : 400; ; 
     line-height : 21px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 12px; 
@@ -360,8 +353,7 @@
     font-weight : 400; 
     line-height : 21px; 
     font-family : "Helvetica Neue", sans-serif; 
-    font-size : 12px; 
-    vertical-align : baseline; 
+    font-size : 12px;
     color : rgb(255, 255, 255); 
     text-decoration: none;
 }
@@ -370,15 +362,10 @@
     cursor: pointer;
 }
 #ps_copyright{
-    box-sizing : border-box; 
-    font-style : normal; 
-    font-variant : normal; 
-    font-weight : 400; 
-    font-stretch : 100%; 
+    font-weight : 400;  
     line-height : 21px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 12px; 
-    vertical-align : baseline; 
     margin-top : 0px; 
     width: 22%;
 
@@ -390,14 +377,10 @@ border-right: 1px solid gray;
 } */
 #ps_bottom_box2>#ps_social{
     box-sizing : border-box; 
-    font-style : normal; 
-    font-variant : normal; 
     font-weight : 400; 
-    font-stretch : 100%; 
     line-height : 21px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 12px; 
-    vertical-align : baseline; 
     list-style : outside none none; 
     display : flex; 
     width: 10%;
@@ -413,23 +396,13 @@ border-right: 1px solid gray;
     align-items: center;
 }
 
-
-/* for carousel */
-
-#ps_famil{
-    text-align: left;
-    align-items: center;
-}
-/*  css for black box */
 #ps_black_bar{
     box-sizing : border-box; 
     padding : 20px 122.94px; 
     font-weight : 400; 
-    font-stretch : 100%; 
     line-height : 21px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 12px; 
-    vertical-align : baseline; 
     background-color : rgb(32, 33, 36); 
     color : rgb(248, 247, 245); 
     position : relative; 
@@ -440,7 +413,6 @@ border-right: 1px solid gray;
     line-height : 21px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 12px; 
-    vertical-align : baseline;
 }
 
 /*  css for featured items. */
@@ -452,8 +424,19 @@ border-right: 1px solid gray;
     margin-left: 10%;
     margin-top: 20px;
     margin-bottom: 40px;
+    font-size: large;
 }
-
+.ps_feature_items{
+    font-weight : 700; 
+    font-size : 38px; 
+    text-transform : uppercase; 
+    background : rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box; 
+    margin-left: 10%;
+}
+#ps_featured>div>img:hover{
+    width:100%;
+    cursor: pointer;
+}
 /*  for red section  */
 
 #ps_red_section{
@@ -462,7 +445,6 @@ border-right: 1px solid gray;
     line-height : 28px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 16px; 
-    vertical-align : baseline; 
     justify-content : space-between;
     align-items : center; 
     background-color : rgb(228, 0, 43); 
@@ -473,13 +455,10 @@ border-right: 1px solid gray;
     height: 80px;
 }
 #ps_red_section>h2{
-    font-weight : 700; 
-    font-stretch : 100%; 
+    font-weight : 700;  
     line-height : 24px; 
-    font-family : "National 2 Condensed"; 
-    font-size : 20px; 
-    vertical-align : baseline; 
-    letter-spacing : 1px; 
+    font-family :"Helvetica Neue", sans-serif; 
+    font-size : 20px;  
     text-transform : uppercase; 
 }
 #ps_red_section>button{
@@ -495,10 +474,12 @@ border-right: 1px solid gray;
     color : rgb(32, 33, 36); 
     font-family : "Helvetica Neue", sans-serif; 
 }
+#ps_red_section>button>a{
+    text-decoration: none;
+    color : rgb(32, 33, 36); 
+}
 #ps_lastred{
     width: 100%;
-    /* height: 600px; */
-    /* border: 1px solid blue; */
     background-color : rgb(228, 0, 43);  
     font-weight : 400;  
     line-height : 28px; 
@@ -511,11 +492,11 @@ border-right: 1px solid gray;
     margin: auto;
     width: 80%;
     height: 90%;
-    /* border : 1px solid rgb(255, 255, 255);    */
     line-height : 28px; 
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 16px; 
 }
+
 #ps_middle>#ps_ourfood{
     margin: auto;
     margin-top: 5%;
@@ -526,9 +507,7 @@ border-right: 1px solid gray;
     margin-bottom: 5%;
 }
 #ps_middle>h2{
-    /* font-family : "National 2 Condensed";  */
     font-size : 80px; 
-    vertical-align : baseline; 
     letter-spacing : 2px; 
     text-transform : uppercase; 
     width : 85%;
@@ -536,8 +515,7 @@ border-right: 1px solid gray;
     font-weight: bolder; 
 }
 #ps_middle>p{
-    font-weight : 400; 
-    font-stretch : 100%; 
+    font-weight : 400;
     font-family : "Helvetica Neue", sans-serif; 
     font-size : 16px;  
     margin-top : 20px; 
@@ -554,3 +532,53 @@ border-right: 1px solid gray;
     font-family : "Helvetica Neue", sans-serif; 
     margin-top : 40px;
 }
+#ps_middle>button>a{
+    text-decoration: none;
+    color : rgb(255, 255, 255);
+    
+}
+
+#ps_founder{
+    background-color : rgb(248, 247, 245); 
+    text-align : left; 
+    overflow : hidden; 
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* padd */
+    justify-content: space-evenly;
+}
+#ps_unlock{
+    width: 45%;
+    height: auto;
+    padding-top: 10%;
+}
+#ps_unlock>h2{ 
+    font-size : 50px; 
+    text-transform : uppercase; 
+    letter-spacing : 1px;
+    font-weight: bold; 
+}
+#ps_unlock>button{
+    height : 44px; 
+    padding : 0px 40px; 
+    border-radius : 22px; 
+    font-size : 14px; 
+    font-weight : 700; 
+    text-align : center; 
+    background-color : rgb(0, 0, 0); 
+    color : rgb(255, 255, 255); 
+    font-family : "Helvetica Neue", sans-serif; 
+    cursor : pointer; 
+}
+#ps_unlock>button>a{
+    text-decoration: none; 
+    color : rgb(255, 255, 255); 
+}
+#ps_founder_photo{
+    width: 40%;
+    height: 90%;
+    justify-content: flex-end;
+    display: flex;
+}
+

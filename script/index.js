@@ -27,6 +27,8 @@ span.addEventListener("click",function(){
     popup.style.display="none";
 })
 
+
+//  for featured items 
 let featured_data=[
     {
         image:"https://i.ibb.co/Jr0zVQf/1.jpg",
