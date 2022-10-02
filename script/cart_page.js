@@ -10,12 +10,19 @@ footer_div.innerHTML=footer();
 
 // Import navbar popup
 
+// Import navbar popup
+
 import {popup_display} from "../components/navbar.js";
 let popup=document.getElementById("ps_popup");
-
 popup.innerHTML=popup_display();
 
-let pickup=document.getElementsByClassName("ps_nav-bottom")[0];
+
+import {del_popup} from "../components/navbar.js";
+let del_address=document.getElementById("ps_delivr");
+del_address.innerHTML=del_popup();
+
+
+let pickup=document.getElementById("pc_button_cart");
 // console.log(pickup);
 pickup.addEventListener("click",function(){
     
@@ -23,7 +30,23 @@ pickup.addEventListener("click",function(){
 })
 
 let span = document.getElementsByClassName("close")[0]
+console.log(span);
 span.addEventListener("click",function(){
+    popup.style.display="none";
+    del_address.style.display="none";
+})
+
+// for delivery popup
+let span1 = document.getElementsByClassName("close")[1]
+span1.addEventListener("click",function(){
+    popup.style.display="none";
+    del_address.style.display="none";
+})
+
+let delivery_popup=document.querySelector("#ps_delivery > button");
+
+delivery_popup.addEventListener("click",function(){
+    del_address.style.display="block";
     popup.style.display="none";
 })
 
