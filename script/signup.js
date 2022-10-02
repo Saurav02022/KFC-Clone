@@ -2,18 +2,26 @@ let HomePage = () => {
   window.location.href = "index.html";
 };
 
+let btn = document.getElementById("sk_btn");
+btn.addEventListener("click", () => {
+  Create_Account();
+});
+
 let flag;
 
 let getData = JSON.parse(localStorage.getItem("SignUp_Data")) || [];
 
+let Data = JSON.parse(localStorage.getItem("SignUp_Data")) 
+
 let Create_Account = () => {
-  const first_name = document.getElementById("First Name").value;
+  event.preventDefault()
+  let first_name = document.getElementById("First_Name").value;
 
-  const last_name = document.getElementById("Last Name").value;
+  let last_name = document.getElementById("Last_Name").value;
 
-  const email = document.getElementById("Email").value;
+  let email = document.getElementById("Email").value;
 
-  const password = document.getElementById("Password").value;
+  let password = document.getElementById("Password").value;
 
   let User = {
     first_name,
@@ -22,16 +30,21 @@ let Create_Account = () => {
     password,
   };
 
-  getData.map((el) => {
+  Data.map((el) => {
     if (el.email == email) {
       flag = true;
     } else {
       flag = false;
     }
   });
+
   if (flag == true) {
     alert("Your are already user Please Login");
-    window.location.href='Login.html'
+<<<<<<< HEAD
+    window.location.href = "Login.html";
+=======
+    window.location.href="Login.html"
+>>>>>>> 261293fe830c4db9660f206118adab806aea0e04
   } else {
     if (first_name !== "") {
       if (last_name !== "") {
@@ -39,7 +52,7 @@ let Create_Account = () => {
           if (password.length >= 8) {
             getData.push(User);
             localStorage.setItem("SignUp_Data", JSON.stringify(getData));
-            window.location.href = "Login.html";
+            window.location.href = "login.html"
           } else {
             alert("Password length should be 8 or more than");
           }

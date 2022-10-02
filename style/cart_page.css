@@ -16,7 +16,7 @@ body{
 #pc_added_product{
 border: 0px solid black;
     width: 60%;
-    margin: 150px 0 0 0;
+    margin: 100px 0 0 0;
     
    
 }
@@ -174,9 +174,19 @@ border: 0px solid black;
     #pc_quantity{
         display: flex;
         border: 0px solid blueviolet;
-        height: 50px;
-        width: 250px;
-       align-items: center;
+       /* justify-content: space-between; */
+       /* align-items: left; */
+     /* justify-items: center; */
+   
+     width: 250px;
+    }
+
+    #pc_quantity>div{
+        height: auto;
+        margin: auto;
+        /* width: 180px; */
+        border: 0px solid black;
+        justify-content: space-around;
     }
    #pc_plus {
     cursor: pointer;
