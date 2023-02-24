@@ -59,4 +59,4 @@ Kentucky Fried Chicken(KFC) is a fast-food restaurant specializing in fried chic
 ![App Screenshot](https://user-images.githubusercontent.com/104342116/221122503-63242824-5c16-49c5-9043-8b4008cec8c1.png)
 ![App Screenshot](https://user-images.githubusercontent.com/104342116/221122732-2429bbbd-6aec-416c-a4bd-ada1dce552a4.png)
 
-<a href="https://kfc-clone-orpin.vercel.app">For more please visit our deployed link</a>
+<a href="https://kfc-clone-saurav02022.netlify.app/">For more please visit our deployed link</a>
