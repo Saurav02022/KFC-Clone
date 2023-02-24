@@ -2,48 +2,72 @@ body {
   margin: 0%;
 }
 #sk_navbar {
-  height: 70px;
-  border: 2px solid whitesmoke;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
   text-align: center;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 #sk_form {
-  /* border: 1px solid red; */
+  border: 1px solid #ccc;
   width: 30%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 input,
 #sk_btn {
   margin-top: 20px;
-  width:400px;
+  width: 400px;
 }
-#sk_btn{
-    height: 40px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
+#sk_btn {
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
-#sk_form{
-    padding:20px
+#sk_form {
+  padding: 20px;
 }
-input{
-    height: 30px;
- text-align: center;
- border: none;
- font-size:19px;
- border-bottom:1px solid black;
+input {
+  height: 30px;
+  text-align: center;
+  border: none;
+  font-size: 19px;
+  border-bottom: 1px solid black;
 }
-a[href="Login.html"],a[ href="signup.html"]{
-    color: black;
-    font-size:20px;
-    text-decoration: none;
+a[href="Login.html"],
+a[href="signup.html"] {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-a[href="https://kfc.com/terms-of-use"],a[href="https://kfc.com/privacy-policy"]{
-    color: black;
-    font-size:17px;
+a[href="https://kfc.com/terms-of-use"],a[href="https://kfc.com/privacy-policy"]
+{
+  color: black;
+  font-size: 17px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #sk_form {
+    width: 40%;
+    margin-bottom: 100px;
+  }
+  input,
+  #sk_btn {
+    width: 300px;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #sk_form {
+    width: 60%;
+    margin-bottom: 100px;
+    padding: 35px;
+  }
+  input,
+  #sk_btn {
+    width: 200px;
+  }
 }
